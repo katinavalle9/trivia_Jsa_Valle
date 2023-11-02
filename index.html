@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/MDB5-STANDARD-UI-KIT-Free-6.4.2/css/mdb.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/trivial2.png" type="image/png">
+    <title>Trivia</title>
+</head>
+
+<body class="container colorOutside">
+
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-success btn-rounded" style="display: block;" id="play">Play</button>
+        </div>
+    </div>
+
+
+    <section class="row" id="completeTrivia" style="display: none;">
+        <div>
+            <h1 class="text-center f">Trivia</h1>
+            <h2 class="text-center">Contesta las preguntas</h2>
+        </div>
+        <form class="col-12 color" id="myForm">
+            <div id="preguntas"></div>
+        </form>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="text-center my-5 btn btn-success btn-rounded btn-lg" id="enviarRespuestas">Ver
+                    puntaje</button>
+                <p>Score: <span id="resultadoSumatoria"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="text-center my-3 btn btn-info btn-rounded btn-lg" id="nuevaTrivia">Nueva trivia</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./lib/MDB5-STANDARD-UI-KIT-Free-6.4.2/js/mdb.min.js"></script>
+    <script src="./js/juegoTrivia.js"></script>
+</body>
+
+</html>
